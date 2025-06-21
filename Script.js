@@ -24,6 +24,7 @@ function setApiKey() {
     }
 
     // Validate API key first
+    
     fetch(rootPath + "controller/api-key/?apiKey=" + inputApiKey)
         .then(function (response) {
             return response.text();
